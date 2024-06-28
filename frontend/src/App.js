@@ -10,7 +10,7 @@ function App() {
     const lat = '-33.719276';
     const lon = '18.455871';
 
-    fetch(`http://localhost:5000/api/weather/${lat}/${lon}`)
+    fetch(`http://127.0.0.1:5000/api/weather/${lat}/${lon}`)
       .then(response => response.json())
       .then(data => setWeather(data));
 
